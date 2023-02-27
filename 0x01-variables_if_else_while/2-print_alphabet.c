@@ -2,31 +2,17 @@
 
 /**
  * main - Entry point
- *
+ * define variable
+ * also an iterrative variable
  * Return: Always 0 (Succes)
  */
-
 int main(void)
 {
-	int n;
-	int i = 0;
+	char a;
 
-	for (n = 0 ; n < 100 ; n++)
+	for (a=65; a<=90; ++a)
 	{
-		putchar(n / 10 + '0');
-		putchar(i + '0');
-		if (n < 99)
-		{
-			putchar(',');
-			putchar(32);
-		}
-		i++;
-		if (i > 9)
-		{
-			i = 0;
-		}
+		putchar(a);
 	}
-	putchar('\n');
 	return (0);
 }
-
