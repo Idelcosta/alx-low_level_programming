@@ -5,28 +5,16 @@
  *
  * Return: Always 0 (Succes)
  */
-
 int main(void)
 {
-	int n;
-	int i;
+	char letter;
 
-	for (n = 0 ; n < 9 ; n++)
-	{
-		i = n + 1;
-		do {
-			putchar('0' + n);
-			putchar('0' + i);
-			if (n < 8)
-			{
-				putchar(',');
-				putchar(32);
-			}
-			i++;
-		} while (i < 10);
-	}
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+	for (letter = 'A'; letter <= 'Z; letter++)
+		putchar(letter);
+
 	putchar('\n');
+
 	return (0);
 }
-
-
