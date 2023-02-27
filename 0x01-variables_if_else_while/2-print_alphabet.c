@@ -9,8 +9,8 @@
 int main(void)
 {
 	char a;
-
-	for (a=65; a<=90; ++a)
+	
+	for (a = 65; a <= 90; ++a)
 	{
 		putchar(a);
 	}
