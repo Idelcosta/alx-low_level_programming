@@ -1,18 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * define variable
- * also an iterrative variable
- * Return: Always 0 (Succes)
+ * main - we want to print a to z 
+ *
+ * Return: Always 0.
  */
 int main(void)
-{
-	char A;
-	for (A = 'a'; A <= 'z'; A++)
-	{
-		putchar(A);
-	}
+
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
 	putchar('\n');
 
