@@ -8,9 +8,8 @@
 
 int main(void)
 {
-        int n;
+	int n;
 	int i;
-	
 	for (n = 0; n < 10; n++)
         {
 		for (i = 0; i < 10; i++)
@@ -18,7 +17,7 @@ int main(void)
 			if (n == i)
 				continue;
 			putchar((n % 10) + '0');
-			putchar((i % 10)+ '0');
+			putchar((i % 10) + '0');
 			putchar(',');
 			putchar(' ');
 		}
