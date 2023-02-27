@@ -5,6 +5,7 @@
  *
  * Return: Always 0 (Succes)
  */
+
 int main(void)
 {
         int n;
@@ -19,7 +20,7 @@ int main(void)
 			putchar((n % 10) + '0');
 			putchar((i % 10)+ '0');
 			putchar(',');
-			putchar(' ')
+			putchar(' ');
 		}
 	}
 
