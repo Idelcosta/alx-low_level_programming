@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - we want to print a to z 
+ * main - we want to print a to z.
  *
  * Return: Always 0.
  */
