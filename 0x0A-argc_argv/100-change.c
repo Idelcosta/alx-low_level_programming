@@ -25,13 +25,15 @@ int coinConverter(int i)
 				i -= 2;
 		}
 		else
+		{
 			i -= 1;
-
+		}
 		count++;
 	}
-
 	return (count);
 }
+
+
 
 int main(int argc, char *argv[])
 {
@@ -48,11 +50,12 @@ int main(int argc, char *argv[])
 	i = atoi(argv[1]);
 
 	if (i < 0)
+	{
 		printf("0\n");
+	}
 	else
 	{
 		coin = coinConverter(i);
-
 		printf("%d\n", coin);
 	}
 
