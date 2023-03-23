@@ -1,15 +1,16 @@
 #include "main.h"
 
-char *string_toupper(char *)
+char *string_toupper(char *hi)
 {
-	int i;
+	int index = 0;
+	int desp = 'a' - 'A';
 
-	i = 0;
-	while (n[i] != '\0')
+	for (index = 0; hi[index] != '\0'; ++index)
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
-			n[i] = n[i] - 32;
-		i++;
+		if (hi[index] >= 'a' && hi[index] <= 'z')
+		{
+			hi[index] = hi[index] - desp;
+		}
 	}
-	return (n);
+	return (hi);
 }
