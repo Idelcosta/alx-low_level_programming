@@ -3,8 +3,6 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <sys.h>
-
 
 typedef struct dlistint_s
 {
