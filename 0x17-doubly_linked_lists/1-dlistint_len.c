@@ -6,13 +6,16 @@ include "lists.h"
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t num_of_elements;
-
-	num_of_elements = 0;
-	while (h)
+	int count;
+	count = 0;
+	if (h == NULL)
+		return (count);
+	while (h->prev != NULL)
+		h = h->prev;
+	while (h != NULL)
 	{
+		count++;
 		h = h->next;
-		num_of_elements = num_of_elements + 1;
 	}
-	return (num_of_elements);
+	return (count);
 }
